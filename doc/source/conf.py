@@ -37,8 +37,8 @@ sys.path.append('/Users/johnyearsley/Documents/Allen Institute/Coding/retinotopi
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.autodoc','sphinx.ext.mathjax',#'sphinx.ext.napoleon',
-'numpydoc','sphinx.ext.autosummary','nbsphinx',
-'IPython.sphinxext.ipython_console_highlighting']
+'numpydoc','sphinx.ext.autosummary',]
+
 numpydoc_show_class_members = False
 
 #class_members_toctree = False
