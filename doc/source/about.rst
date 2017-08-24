@@ -42,7 +42,7 @@ how a moving dot is represented in the mouse brain.
 
 .. raw:: html
    
-   <video controls height="400" width="600" src="_static/retinotopy_video.mp4"></video>
+   <video controls height="400" width="600" src="/Users/johnyearsley/Documents/Allen Institute/Coding/retinotopic_mapping/doc/source/_static/retinotopy_video.mp4"></video>
    
 
 Contributors

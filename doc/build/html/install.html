@@ -109,7 +109,6 @@
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Brain_Observatory_SDK.html">Using the Brain Observatory SDK</a></li>
 </ul>
 
             
@@ -215,8 +214,8 @@
 <a class="reference external" href="https://pypi.python.org/pypi?name=retinotopic-maps&amp;version=2.0.0&amp;:action=display">here</a>.</p>
 <p>Then open the command line, move to the directory that the package was
 installed in and run the <cite>setup.py</cite> file like follows:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">&lt;</span><span class="n">full</span> <span class="n">path</span> <span class="n">to</span> <span class="n">the</span> <span class="n">package</span> <span class="n">location</span><span class="o">&gt;</span>
-<span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;full path to the package location&gt;
+python setup.py install
 </pre></div>
 </div>
 </div>
@@ -224,7 +223,11 @@ installed in and run the <cite>setup.py</cite> file like follows:</p>
 <h2>PIP install<a class="headerlink" href="#pip-install" title="Permalink to this headline">¶</a></h2>
 <p>An even simpler way to install the package is with pip. To do so type the following
 in the command line:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">retinotopic_maps</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">retinotopic_mapping</span>
+</pre></div>
+</div>
+<p>If you have already installed the package make sure to update to the newest version by running the following command</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>pip install retinotopic_mapping -U
 </pre></div>
 </div>
 </div>
@@ -335,7 +338,7 @@ import statements somewhere in your script.</p>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

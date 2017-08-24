@@ -102,44 +102,25 @@
 <li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">API Documentation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#monitorsetup">MonitorSetup</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#monitor">Monitor</a><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#indicator">Indicator</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#monitor">Monitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#indicator">Indicator</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#stimulusroutines">StimulusRoutines</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#uniformcontrast">UniformContrast</a><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#flashingcircle">FlashingCircle</a><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#sparsenoise">SparseNoise</a><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#driftinggratingcircle">DriftingGratingCircle</a><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#ksstim">KSstim</a><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#ksstimalldir">KSstimAllDir</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#uniformcontrast">UniformContrast</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flashingcircle">FlashingCircle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sparsenoise">SparseNoise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#driftinggratingcircle">DriftingGratingCircle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ksstim">KSstim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ksstimalldir">KSstimAllDir</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#displaystimulus">DisplayStimulus</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#displaysequence">DisplaySequence</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="#displaysequence">DisplaySequence</a></li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Brain_Observatory_SDK.html">Using the Brain Observatory SDK</a></li>
 </ul>
 
             
@@ -257,7 +238,7 @@ and <cite>StimulusRoutines</cite> modules.</p>
 <h3>Monitor<a class="headerlink" href="#monitor" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="retinotopic_mapping.MonitorSetup.Monitor">
-<em class="property">class </em><code class="descclassname">retinotopic_mapping.MonitorSetup.</code><code class="descname">Monitor</code><span class="sig-paren">(</span><em>resolution</em>, <em>dis</em>, <em>mon_width_cm</em>, <em>mon_height_cm</em>, <em>C2T_cm</em>, <em>C2A_cm</em>, <em>mon_tilt</em>, <em>visual_field=’right’</em>, <em>deg_coord_x=None</em>, <em>deg_coord_y=None</em>, <em>name=’testMonitor’</em>, <em>gamma=None</em>, <em>gamma_grid=None</em>, <em>luminance=None</em>, <em>downsample_rate=10</em>, <em>refresh_rate=60.0</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.MonitorSetup.Monitor" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">retinotopic_mapping.MonitorSetup.</code><code class="descname">Monitor</code><span class="sig-paren">(</span><em>resolution</em>, <em>dis</em>, <em>mon_width_cm</em>, <em>mon_height_cm</em>, <em>C2T_cm</em>, <em>C2A_cm</em>, <em>mon_tilt</em>, <em>visual_field='right'</em>, <em>deg_coord_x=None</em>, <em>deg_coord_y=None</em>, <em>name='testMonitor'</em>, <em>gamma=None</em>, <em>gamma_grid=None</em>, <em>luminance=None</em>, <em>downsample_rate=10</em>, <em>refresh_rate=60.0</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.MonitorSetup.Monitor" title="Permalink to this definition">¶</a></dt>
 <dd><p>monitor object created by Jun, has the method “remap” to generate the 
 spherical corrected coordinates in degrees</p>
 <p>This object contains the relevant data for the monitor used within a 
@@ -338,33 +319,12 @@ warped by calling the <cite>remap</cite> method to populate the <cite>deg_coord_
 </tr>
 </tbody>
 </table>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">remap</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">set_downsample_rate</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">set_gamma</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">set_luminance</span></code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
 <dl class="method">
 <dt id="retinotopic_mapping.MonitorSetup.Monitor.remap">
 <code class="descname">remap</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.MonitorSetup.Monitor.remap" title="Permalink to this definition">¶</a></dt>
-<dd><p>warp the linear pixel coordinates and populate the <cite>deg_coord_x</cite> and 
-<cite>deg_coord_y</cite> attributes.</p>
-<p>Function is called when the monitor object is initialized.</p>
+<dd><p>warp the linear pixel coordinates to a spherical corrected representation.</p>
+<p>Function is called when the monitor object is initialized and populate 
+the <cite>deg_coord_x</cite> and <cite>deg_coord_y</cite> attributes.</p>
 </dd></dl>
 
 </dd></dl>
@@ -374,7 +334,7 @@ warped by calling the <cite>remap</cite> method to populate the <cite>deg_coord_
 <h3>Indicator<a class="headerlink" href="#indicator" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="retinotopic_mapping.MonitorSetup.Indicator">
-<em class="property">class </em><code class="descclassname">retinotopic_mapping.MonitorSetup.</code><code class="descname">Indicator</code><span class="sig-paren">(</span><em>monitor</em>, <em>width_cm=3.0</em>, <em>height_cm=3.0</em>, <em>position=’northeast’</em>, <em>is_sync=True</em>, <em>freq=2.0</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.MonitorSetup.Indicator" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">retinotopic_mapping.MonitorSetup.</code><code class="descname">Indicator</code><span class="sig-paren">(</span><em>monitor</em>, <em>width_cm=3.0</em>, <em>height_cm=3.0</em>, <em>position='northeast'</em>, <em>is_sync=True</em>, <em>freq=2.0</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.MonitorSetup.Indicator" title="Permalink to this definition">¶</a></dt>
 <dd><p>flashing indicator for photodiode</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -409,24 +369,6 @@ defaults to True.</p>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">get_center</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">get_frames</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">get_size_pixel</span></code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
 <dl class="method">
 <dt id="retinotopic_mapping.MonitorSetup.Indicator.get_frames">
 <code class="descname">get_frames</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.MonitorSetup.Indicator.get_frames" title="Permalink to this definition">¶</a></dt>
@@ -444,7 +386,7 @@ of indicator</p>
 <h3>UniformContrast<a class="headerlink" href="#uniformcontrast" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="retinotopic_mapping.StimulusRoutines.UniformContrast">
-<em class="property">class </em><code class="descclassname">retinotopic_mapping.StimulusRoutines.</code><code class="descname">UniformContrast</code><span class="sig-paren">(</span><em>monitor</em>, <em>indicator</em>, <em>duration</em>, <em>color=0.0</em>, <em>pregap_dur=2.0</em>, <em>postgap_dur=3.0</em>, <em>background=0.0</em>, <em>coordinate=’degree’</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.UniformContrast" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">retinotopic_mapping.StimulusRoutines.</code><code class="descname">UniformContrast</code><span class="sig-paren">(</span><em>monitor</em>, <em>indicator</em>, <em>duration</em>, <em>color=0.0</em>, <em>pregap_dur=2.0</em>, <em>postgap_dur=3.0</em>, <em>background=0.0</em>, <em>coordinate='degree'</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.UniformContrast" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate full field uniform luminance for recording spontaneous activity.
 Inherits from Stim.</p>
 <p>The full field uniform luminance stimulus presents a fixed background color
@@ -477,7 +419,7 @@ to <cite>2.</cite></p>
 </div></blockquote>
 <p><strong>postgap_dur</strong> : float, optional</p>
 <blockquote>
-<div><p>amount of time (in seconds) after the stimulus is presented, defaults 
+<div><p>amount of time (in seconds) after the stimulus is presented, defaults
 to <cite>3.</cite></p>
 </div></blockquote>
 <p><strong>background</strong> : float, optional</p>
@@ -488,54 +430,15 @@ to <cite>3.</cite></p>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Attributes</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">postgap_frame_num</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">pregap_frame_num</span></code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">clear</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">generate_frames</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">generate_movie</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">set_post_gap_dur</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">set_pre_gap_dur</span></code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
 <dl class="method">
 <dt id="retinotopic_mapping.StimulusRoutines.UniformContrast.generate_frames">
 <code class="descname">generate_frames</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.UniformContrast.generate_frames" title="Permalink to this definition">¶</a></dt>
-<dd><p>generate a tuple of parameters of each frame.</p>
+<dd><p>generate a tuple of parameters with information for each frame.</p>
 <dl class="docutils">
 <dt>Information contained in each frame:</dt>
 <dd><dl class="first last docutils">
-<dt>first element - </dt>
-<dd>during display frames, value takes on 1 and value 
+<dt>first element -</dt>
+<dd>during display frames, value takes on 1 and value
 is 0 otherwise</dd>
 <dt>second element - color of indicator</dt>
 <dd>during display value is equal to 1 and during gaps value is
@@ -548,23 +451,29 @@ equal to -1</dd>
 <dl class="method">
 <dt id="retinotopic_mapping.StimulusRoutines.UniformContrast.generate_movie">
 <code class="descname">generate_movie</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.UniformContrast.generate_movie" title="Permalink to this definition">¶</a></dt>
-<dd><p>generate movie for uniform contrast display frame by frame</p>
+<dd><p>generate movie for uniform contrast display frame by frame.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>full_seq</strong> : list</p>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>full_seq</strong> : nd array, uint8</p>
 <blockquote>
-<div><p>3-d array of the stimulus to be displayed. elements are of type unit8</p>
+<div><p>3-d array of the stimulus to be displayed.</p>
 </div></blockquote>
 <p><strong>full_dict</strong> : dict</p>
 <blockquote class="last">
-<div><p>dictionary containing the information of the stimulus</p>
+<div><p>dictionary containing the information of the stimulus.</p>
 </div></blockquote>
 </td>
 </tr>
 </tbody>
 </table>
+</dd></dl>
+
+<dl class="method">
+<dt id="retinotopic_mapping.StimulusRoutines.UniformContrast.generate_movie_by_index">
+<code class="descname">generate_movie_by_index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.UniformContrast.generate_movie_by_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute the stimulus movie to be displayed by index.</p>
 </dd></dl>
 
 </dd></dl>
@@ -574,9 +483,9 @@ equal to -1</dd>
 <h3>FlashingCircle<a class="headerlink" href="#flashingcircle" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="retinotopic_mapping.StimulusRoutines.FlashingCircle">
-<em class="property">class </em><code class="descclassname">retinotopic_mapping.StimulusRoutines.</code><code class="descname">FlashingCircle</code><span class="sig-paren">(</span><em>monitor</em>, <em>indicator</em>, <em>coordinate=’degree’</em>, <em>center=(90.0</em>, <em>10.0)</em>, <em>radius=10.0</em>, <em>color=-1.0</em>, <em>iteration=1</em>, <em>flash_frame=3</em>, <em>pregap_dur=2.0</em>, <em>postgap_dur=3.0</em>, <em>background=0.0</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.FlashingCircle" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">retinotopic_mapping.StimulusRoutines.</code><code class="descname">FlashingCircle</code><span class="sig-paren">(</span><em>monitor</em>, <em>indicator</em>, <em>coordinate='degree'</em>, <em>center=(90.0</em>, <em>10.0)</em>, <em>radius=10.0</em>, <em>color=-1.0</em>, <em>iteration=1</em>, <em>flash_frame=3</em>, <em>pregap_dur=2.0</em>, <em>postgap_dur=3.0</em>, <em>background=0.0</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.FlashingCircle" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate flashing circle stimulus.</p>
-<p>Stimulus routine presents a circle centered at the position <cite>center</cite> 
+<p>Stimulus routine presents a circle centered at the position <cite>center</cite>
 with given <cite>radius</cite>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -584,28 +493,28 @@ with given <cite>radius</cite>.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>monitor</strong> : monitor object</p>
 <blockquote>
-<div><p>contains display monitor information</p>
+<div><p>contains display monitor information.</p>
 </div></blockquote>
 <p><strong>indicator</strong> : indicator object</p>
 <blockquote>
-<div><p>contains indicator information</p>
+<div><p>contains indicator information.</p>
 </div></blockquote>
 <p><strong>coordinate</strong> : str from {‘degree’,’linear’}, optional</p>
 <blockquote>
-<div><p>specifies coordinates, defaults to ‘degree’</p>
+<div><p>specifies coordinates, defaults to ‘degree’.</p>
 </div></blockquote>
 <p><strong>background</strong> : float, optional</p>
 <blockquote>
 <div><p>color of background. Takes values in [-1,1] where -1 is black and 1
-is white</p>
+is white.</p>
 </div></blockquote>
 <p><strong>stim_name</strong> : str</p>
 <blockquote>
-<div><p>Name of the stimulus</p>
+<div><p>Name of the stimulus.</p>
 </div></blockquote>
 <p><strong>center</strong> : 2-tuple, optional</p>
 <blockquote>
-<div><p>center coordinate of the circle in degrees, defaults to <cite>(90.,10.)</cite></p>
+<div><p>center coordinate of the circle in degrees, defaults to <cite>(90.,10.)</cite>.</p>
 </div></blockquote>
 <p><strong>radius</strong> : float, optional</p>
 <blockquote>
@@ -617,90 +526,42 @@ is white</p>
 </div></blockquote>
 <p><strong>iteration</strong> : int, optional</p>
 <blockquote>
-<div><p>total number of flashes, defaults to <cite>1</cite></p>
+<div><p>total number of flashes, defaults to <cite>1</cite>.</p>
 </div></blockquote>
 <p><strong>flash_frame</strong> : int, optional</p>
 <blockquote class="last">
 <div><p>number of frames that circle is displayed during each presentation
-of the stimulus, defaults to <cite>3</cite></p>
+of the stimulus, defaults to <cite>3</cite>.</p>
 </div></blockquote>
 </td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Attributes</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">postgap_frame_num</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">pregap_frame_num</span></code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">clear</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">generate_frames</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">generate_movie</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">set_center</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">set_color</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">set_flash_frame_num</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">set_post_gap_dur</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">set_pre_gap_dur</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">set_radius</span></code></td>
-<td></td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="retinotopic_mapping.StimulusRoutines.FlashingCircle.generate_frames">
 <code class="descname">generate_frames</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.FlashingCircle.generate_frames" title="Permalink to this definition">¶</a></dt>
-<dd><p>function to generate all the frames needed for the stimulation. 
-Returns a list of information of all frames as a list of tuples</p>
+<dd><p>function to generate all the frames needed for the stimulation.</p>
 <dl class="docutils">
 <dt>Information contained in each frame:</dt>
 <dd><dl class="first last docutils">
-<dt>first element <span class="classifier-delimiter">:</span> <span class="classifier"></span></dt>
+<dt>first element :</dt>
 <dd>during a gap, the value is equal to 0 and during display the
 value is equal to 1</dd>
-<dt>second element <span class="classifier-delimiter">:</span> <span class="classifier"></span></dt>
+<dt>second element :</dt>
 <dd>the value is equal to 1 on the frame that the stimulus begins,
 and is equal to 0 otherwise.</dd>
-<dt>third element <span class="classifier-delimiter">:</span> <span class="classifier"></span></dt>
+<dt>third element :</dt>
 <dd>value corresponds to the current iteration</dd>
-<dt>fourth element <span class="classifier-delimiter">:</span> <span class="classifier"></span></dt>
-<dd>corresponds to the color of indicator and during stimulus 
-the value is equal to 1, whereas during a gap the value is 
+<dt>fourth element :</dt>
+<dd>corresponds to the color of indicator and during stimulus
+the value is equal to 1, whereas during a gap the value is
 equal to 0</dd>
 </dl>
 </dd>
+</dl>
+<dl class="docutils">
+<dt>frames <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd>list of information defining each frame.</dd>
 </dl>
 </dd></dl>
 
@@ -710,6 +571,12 @@ equal to 0</dd>
 <dd><p>generate movie frame by frame.</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="retinotopic_mapping.StimulusRoutines.FlashingCircle.generate_movie_by_index">
+<code class="descname">generate_movie_by_index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.FlashingCircle.generate_movie_by_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute the stimulus movie to be displayed by index.</p>
+</dd></dl>
+
 </dd></dl>
 
 </div>
@@ -717,7 +584,7 @@ equal to 0</dd>
 <h3>SparseNoise<a class="headerlink" href="#sparsenoise" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="retinotopic_mapping.StimulusRoutines.SparseNoise">
-<em class="property">class </em><code class="descclassname">retinotopic_mapping.StimulusRoutines.</code><code class="descname">SparseNoise</code><span class="sig-paren">(</span><em>monitor</em>, <em>indicator</em>, <em>background=0.0</em>, <em>coordinate=’degree’</em>, <em>grid_space=(10.0</em>, <em>10.0)</em>, <em>probe_size=(10.0</em>, <em>10.0)</em>, <em>probe_orientation=0.0</em>, <em>probe_frame_num=3</em>, <em>subregion=None</em>, <em>sign=’ON-OFF’</em>, <em>iteration=1</em>, <em>pregap_dur=2.0</em>, <em>postgap_dur=3.0</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.SparseNoise" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">retinotopic_mapping.StimulusRoutines.</code><code class="descname">SparseNoise</code><span class="sig-paren">(</span><em>monitor</em>, <em>indicator</em>, <em>background=0.0</em>, <em>coordinate='degree'</em>, <em>grid_space=(10.0</em>, <em>10.0)</em>, <em>probe_size=(10.0</em>, <em>10.0)</em>, <em>probe_orientation=0.0</em>, <em>probe_frame_num=6</em>, <em>subregion=None</em>, <em>sign='ON-OFF'</em>, <em>iteration=1</em>, <em>pregap_dur=2.0</em>, <em>postgap_dur=3.0</em>, <em>is_include_edge=True</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.SparseNoise" title="Permalink to this definition">¶</a></dt>
 <dd><p>generate sparse noise stimulus integrates flashing indicator for photodiode</p>
 <p>This stimulus routine presents quasi-random noise in a specified region of
 the monitor. The <cite>background</cite> color can be customized but defaults to a
@@ -772,55 +639,23 @@ list or tuple</p>
 </div></blockquote>
 <p><strong>sign</strong> : {‘ON-OFF’, ‘ON’, ‘OFF’}, optional</p>
 <blockquote>
-<div><p>determines which pixels appear in the <cite>subregion</cite>, defaults to 
-<cite>‘ON-Off’</cite> so that both on and off pixels appear. If <cite>‘ON</cite> selected 
-only on pixels (white) are displayed in the noise <cite>subregion while if 
+<div><p>determines which pixels appear in the <cite>subregion</cite>, defaults to
+<cite>‘ON-Off’</cite> so that both on and off pixels appear. If <cite>‘ON</cite> selected
+only on pixels (white) are displayed in the noise <cite>subregion while if
 `’OFF’</cite> is selected only off (black) pixels are displayed in the noise</p>
 </div></blockquote>
 <p><strong>iteration</strong> : int, optional</p>
-<blockquote class="last">
+<blockquote>
 <div><p>number of times to present stimulus, defaults to <cite>1</cite></p>
 </div></blockquote>
+<p><strong>is_include_edge</strong> : bool, default True,</p>
+<blockquote class="last">
+<div><p>if True, the displayed probes will cover the edge case and ensure that
+the entire subregion is covered.
+If False, the displayed probes will exclude edge case and ensure that all
+the centers of displayed probes are within the subregion.</p>
+</div></blockquote>
 </td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Attributes</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">postgap_frame_num</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">pregap_frame_num</span></code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">clear</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">generate_frames</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">generate_movie</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">set_post_gap_dur</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">set_pre_gap_dur</span></code></td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -835,16 +670,16 @@ only on pixels (white) are displayed in the noise <cite>subregion while if
 <dt>first element - int</dt>
 <dd>when stimulus is displayed value is equal to 1, otherwise
 equal to 0,</dd>
-<dt>second element - tuple, </dt>
+<dt>second element - tuple,</dt>
 <dd>retinotopic location of the center of current square,[azi,alt]</dd>
-<dt>third element - </dt>
+<dt>third element -</dt>
 <dd>polarity of current square, 1 -&gt; bright, -1-&gt; dark</dd>
 <dt>forth element - color of indicator</dt>
 <dd><dl class="first last docutils">
-<dt>if synchronized <span class="classifier-delimiter">:</span> <span class="classifier">value equal to 0 when stimulus is not </span></dt>
-<dd>begin displayed, and 1 for onset frame of stimulus for 
+<dt>if synchronized <span class="classifier-delimiter">:</span> <span class="classifier">value equal to 0 when stimulus is not</span></dt>
+<dd>begin displayed, and 1 for onset frame of stimulus for
 each square, -1 for the rest.</dd>
-<dt>if non-synchronized: values alternate between -1 and 1 </dt>
+<dt>if non-synchronized: values alternate between -1 and 1</dt>
 <dd>at defined frequency</dd>
 </dl>
 </dd>
@@ -860,6 +695,12 @@ each square, -1 for the rest.</dd>
 <dd><p>generate movie for display frame by frame</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="retinotopic_mapping.StimulusRoutines.SparseNoise.generate_movie_by_index">
+<code class="descname">generate_movie_by_index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.SparseNoise.generate_movie_by_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute the stimulus movie to be displayed by index.</p>
+</dd></dl>
+
 </dd></dl>
 
 </div>
@@ -867,12 +708,12 @@ each square, -1 for the rest.</dd>
 <h3>DriftingGratingCircle<a class="headerlink" href="#driftinggratingcircle" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="retinotopic_mapping.StimulusRoutines.DriftingGratingCircle">
-<em class="property">class </em><code class="descclassname">retinotopic_mapping.StimulusRoutines.</code><code class="descname">DriftingGratingCircle</code><span class="sig-paren">(</span><em>monitor</em>, <em>indicator</em>, <em>background=0.0</em>, <em>coordinate=’degree’</em>, <em>center=(60.0</em>, <em>0.0)</em>, <em>sf_list=(0.08</em>, <em>)</em>, <em>tf_list=(4.0</em>, <em>)</em>, <em>dire_list=(0.0</em>, <em>)</em>, <em>con_list=(0.5</em>, <em>)</em>, <em>size_list=(5.0</em>, <em>)</em>, <em>block_dur=2.0</em>, <em>midgap_dur=0.5</em>, <em>iteration=1</em>, <em>pregap_dur=2.0</em>, <em>postgap_dur=3.0</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.DriftingGratingCircle" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">retinotopic_mapping.StimulusRoutines.</code><code class="descname">DriftingGratingCircle</code><span class="sig-paren">(</span><em>monitor</em>, <em>indicator</em>, <em>background=0.0</em>, <em>coordinate='degree'</em>, <em>center=(60.0</em>, <em>0.0)</em>, <em>sf_list=(0.08</em>, <em>)</em>, <em>tf_list=(4.0</em>, <em>)</em>, <em>dire_list=(0.0</em>, <em>)</em>, <em>con_list=(0.5</em>, <em>)</em>, <em>size_list=(5.0</em>, <em>)</em>, <em>block_dur=2.0</em>, <em>midgap_dur=0.5</em>, <em>iteration=1</em>, <em>pregap_dur=2.0</em>, <em>postgap_dur=3.0</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.DriftingGratingCircle" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate drifting grating circle stimulus</p>
-<p>Stimulus routine presents drifting checkerboard grating stimulus inside 
-of a circle centered at <cite>center</cite>. The drifting gratings are determined by 
+<p>Stimulus routine presents drifting checkerboard grating stimulus inside
+of a circle centered at <cite>center</cite>. The drifting gratings are determined by
 spatial and temporal frequencies, directionality, contrast, and radius of
-the circle. The routine can generate several different gratings within 
+the circle. The routine can generate several different gratings within
 one presentation by specifying multiple values of the parameters which
 characterize the stimulus.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -937,45 +778,6 @@ to <cite>(5.)</cite></p>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Attributes</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">postgap_frame_num</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">pregap_frame_num</span></code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">clear</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">generate_frames</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">generate_movie</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">set_post_gap_dur</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">set_pre_gap_dur</span></code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
 <dl class="method">
 <dt id="retinotopic_mapping.StimulusRoutines.DriftingGratingCircle.generate_frames">
 <code class="descname">generate_frames</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.DriftingGratingCircle.generate_frames" title="Permalink to this definition">¶</a></dt>
@@ -986,26 +788,26 @@ returns a list of information of all frames as a list of tuples</p>
 <dd><dl class="first docutils">
 <dt>first element -</dt>
 <dd>value equal to 1 during stimulus and 0 otherwise</dd>
-<dt>second element - </dt>
+<dt>second element -</dt>
 <dd>on first frame in a cycle value takes on 1, and otherwise is
 equal to 0.</dd>
 <dt>third element -</dt>
 <dd>spatial frequency</dd>
 <dt>forth element -</dt>
 <dd>temporal frequency</dd>
-<dt>fifth element - </dt>
+<dt>fifth element -</dt>
 <dd>direction, [0, 2*pi)</dd>
 <dt>sixth element -</dt>
 <dd>contrast</dd>
-<dt>seventh element - </dt>
+<dt>seventh element -</dt>
 <dd>size (radius of the circle)</dd>
-<dt>eighth element - </dt>
+<dt>eighth element -</dt>
 <dd>phase, [0, 2*pi)</dd>
 <dt>ninth element -</dt>
 <dd>indicator color [-1, 1]. Value is equal to 1 on the first
 frame of each cycle, -1 during gaps and otherwise 0.</dd>
 </dl>
-<p class="last">during gap frames the second through the eighth elements should 
+<p class="last">during gap frames the second through the eighth elements should
 be ‘None’.</p>
 </dd>
 </dl>
@@ -1017,6 +819,12 @@ be ‘None’.</p>
 <dd><p>Generate movie frame by frame</p>
 </dd></dl>
 
+<dl class="method">
+<dt id="retinotopic_mapping.StimulusRoutines.DriftingGratingCircle.generate_movie_by_index">
+<code class="descname">generate_movie_by_index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.DriftingGratingCircle.generate_movie_by_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute the stimulus movie to be displayed by index.</p>
+</dd></dl>
+
 </dd></dl>
 
 </div>
@@ -1024,9 +832,9 @@ be ‘None’.</p>
 <h3>KSstim<a class="headerlink" href="#ksstim" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="retinotopic_mapping.StimulusRoutines.KSstim">
-<em class="property">class </em><code class="descclassname">retinotopic_mapping.StimulusRoutines.</code><code class="descname">KSstim</code><span class="sig-paren">(</span><em>monitor</em>, <em>indicator</em>, <em>background=0.0</em>, <em>coordinate=’degree’</em>, <em>square_size=25.0</em>, <em>square_center=(0</em>, <em>0)</em>, <em>flicker_frame=10</em>, <em>sweep_width=20.0</em>, <em>step_width=0.15</em>, <em>direction=’B2U’</em>, <em>sweep_frame=1</em>, <em>iteration=1</em>, <em>pregap_dur=2.0</em>, <em>postgap_dur=3.0</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.KSstim" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">retinotopic_mapping.StimulusRoutines.</code><code class="descname">KSstim</code><span class="sig-paren">(</span><em>monitor</em>, <em>indicator</em>, <em>background=0.0</em>, <em>coordinate='degree'</em>, <em>square_size=25.0</em>, <em>square_center=(0</em>, <em>0)</em>, <em>flicker_frame=10</em>, <em>sweep_width=20.0</em>, <em>step_width=0.15</em>, <em>direction='B2U'</em>, <em>sweep_frame=1</em>, <em>iteration=1</em>, <em>pregap_dur=2.0</em>, <em>postgap_dur=3.0</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.KSstim" title="Permalink to this definition">¶</a></dt>
 <dd><p>generate Kalatsky &amp; Stryker stimulus</p>
-<p>Kalatsky &amp; Stryker (KS) stimulus routine presents checkerboard gratings 
+<p>Kalatsky &amp; Stryker (KS) stimulus routine presents checkerboard gratings
 that drift against a fixed <cite>background</cite> color.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -1042,7 +850,7 @@ that drift against a fixed <cite>background</cite> color.</p>
 </div></blockquote>
 <p><strong>background</strong> : float, optional</p>
 <blockquote>
-<div><p>background color of stimulus, takes values in [-1,1]. defaults to 
+<div><p>background color of stimulus, takes values in [-1,1]. defaults to
 <cite>0.</cite></p>
 </div></blockquote>
 <p><strong>coordinate</strong> : str, optional</p>
@@ -1074,7 +882,7 @@ is ‘linear’ or ‘degree’ respectively. defaults to <cite>0.15</cite></p>
 </div></blockquote>
 <p><strong>direction</strong> : {‘B2U’,’U2B’,’L2R’,’R2L’}, optional</p>
 <blockquote>
-<div><p>the direction of sweep movement, defaults to ‘B2U’. ‘B2U’ means 
+<div><p>the direction of sweep movement, defaults to ‘B2U’. ‘B2U’ means
 stim is presented from the bottom to the top of the screen, whereas
 ‘U2B’ is from the top to the bottom. ‘L2R’ is left to right and ‘R2L’
 is right to left</p>
@@ -1099,63 +907,6 @@ is right to left</p>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Attributes</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">postgap_frame_num</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">pregap_frame_num</span></code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">clear</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">generate_frames</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">generate_movie</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">generate_squares</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">generate_sweeps</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">plot_squares</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">set_direction</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">set_post_gap_dur</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">set_pre_gap_dur</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">set_sweep_sigma</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">set_sweep_width</span></code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
 <dl class="method">
 <dt id="retinotopic_mapping.StimulusRoutines.KSstim.generate_frames">
 <code class="descname">generate_frames</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.KSstim.generate_frames" title="Permalink to this definition">¶</a></dt>
@@ -1167,11 +918,11 @@ returnins a list of information of all frames as a list of tuples</p>
 <div><dl class="docutils">
 <dt>first element -</dt>
 <dd>during stimulus value is equal to 1 and 0 otherwise</dd>
-<dt>second element - </dt>
+<dt>second element -</dt>
 <dd>square polarity, 1-&gt;not reversed; -1-&gt;reversed</dd>
-<dt>third element: </dt>
+<dt>third element:</dt>
 <dd>sweeps, index in sweep table</dd>
-<dt>forth element - </dt>
+<dt>forth element -</dt>
 <dd><dl class="first last docutils">
 <dt>color of indicator</dt>
 <dd>synchronized: gap-&gt;-1, sweep on -&gt; 1
@@ -1216,7 +967,7 @@ non-synchronized: alternating between -1 and 1 at defined frequency</dd>
 <h3>KSstimAllDir<a class="headerlink" href="#ksstimalldir" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="retinotopic_mapping.StimulusRoutines.KSstimAllDir">
-<em class="property">class </em><code class="descclassname">retinotopic_mapping.StimulusRoutines.</code><code class="descname">KSstimAllDir</code><span class="sig-paren">(</span><em>monitor</em>, <em>indicator</em>, <em>coordinate=’degree’</em>, <em>background=0.0</em>, <em>square_size=25</em>, <em>square_center=(0</em>, <em>0)</em>, <em>flicker_frame=6</em>, <em>sweep_width=20.0</em>, <em>step_width=0.15</em>, <em>sweep_frame=1</em>, <em>iteration=1</em>, <em>pregap_dur=2.0</em>, <em>postgap_dur=3.0</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.KSstimAllDir" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">retinotopic_mapping.StimulusRoutines.</code><code class="descname">KSstimAllDir</code><span class="sig-paren">(</span><em>monitor</em>, <em>indicator</em>, <em>coordinate='degree'</em>, <em>background=0.0</em>, <em>square_size=25</em>, <em>square_center=(0</em>, <em>0)</em>, <em>flicker_frame=6</em>, <em>sweep_width=20.0</em>, <em>step_width=0.15</em>, <em>sweep_frame=1</em>, <em>iteration=1</em>, <em>pregap_dur=2.0</em>, <em>postgap_dur=3.0</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.KSstimAllDir" title="Permalink to this definition">¶</a></dt>
 <dd><p>generate Kalatsky &amp; Stryker stimulation in all four direction contiuously</p>
 <p>Generalizes the KS stimulus routine so that the drifting gratings can go
 in all four directions</p>
@@ -1282,18 +1033,6 @@ defaults to <cite>6</cite></p>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">generate_movie</span></code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
 <dl class="method">
 <dt id="retinotopic_mapping.StimulusRoutines.KSstimAllDir.generate_movie">
 <code class="descname">generate_movie</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.StimulusRoutines.KSstimAllDir.generate_movie" title="Permalink to this definition">¶</a></dt>
@@ -1316,41 +1055,14 @@ presentation.</p>
 <h3>DisplaySequence<a class="headerlink" href="#displaysequence" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="retinotopic_mapping.DisplayStimulus.DisplaySequence">
-<em class="property">class </em><code class="descclassname">retinotopic_mapping.DisplayStimulus.</code><code class="descname">DisplaySequence</code><span class="sig-paren">(</span><em>log_dir</em>, <em>backupdir=None</em>, <em>display_iter=1</em>, <em>display_order=1</em>, <em>mouse_id=’Test’</em>, <em>user_id=’Name’</em>, <em>psychopy_mon=’testMonitor’</em>, <em>is_interpolate=False</em>, <em>is_triggered=False</em>, <em>trigger_NI_dev=’Dev1’</em>, <em>trigger_NI_port=1</em>, <em>trigger_NI_line=0</em>, <em>is_sync_pulse_pulse=True</em>, <em>sync_pulse_NI_dev=’Dev1’</em>, <em>sync_pulse_NI_port=1</em>, <em>sync_pulse_NI_line=1</em>, <em>display_trigger_event=’negative_edge’</em>, <em>display_screen=0</em>, <em>initial_background_color=0</em>, <em>file_num_NI_dev=’Dev1’</em>, <em>file_num_NI_port=‘0’</em>, <em>file_num_NI_lines=‘0:7’</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.DisplayStimulus.DisplaySequence" title="Permalink to this definition">¶</a></dt>
-<dd><p>Display the numpy sequence from memory</p>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">clear</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">flag_to_close</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">save_log</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">set_any_array</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">set_display_iteration</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">set_display_order</span></code></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">set_stim</span></code></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">trigger_display</span></code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<em class="property">class </em><code class="descclassname">retinotopic_mapping.DisplayStimulus.</code><code class="descname">DisplaySequence</code><span class="sig-paren">(</span><em>log_dir</em>, <em>backupdir=None</em>, <em>display_iter=1</em>, <em>display_order=1</em>, <em>mouse_id='Test'</em>, <em>user_id='Name'</em>, <em>psychopy_mon='testMonitor'</em>, <em>is_interpolate=False</em>, <em>is_triggered=False</em>, <em>by_index=False</em>, <em>trigger_NI_dev='Dev1'</em>, <em>trigger_NI_port=1</em>, <em>trigger_NI_line=0</em>, <em>is_sync_pulse=True</em>, <em>sync_pulse_NI_dev='Dev1'</em>, <em>sync_pulse_NI_port=1</em>, <em>sync_pulse_NI_line=1</em>, <em>display_trigger_event='negative_edge'</em>, <em>display_screen=0</em>, <em>initial_background_color=0</em>, <em>file_num_NI_dev='Dev1'</em>, <em>file_num_NI_port='0'</em>, <em>file_num_NI_lines='0:7'</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.DisplayStimulus.DisplaySequence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display the stimulus routine from memory.</p>
+<p>Takes care of high level management of your computer 
+hardware with respect to its interactions within a given experiment.
+Stimulus presentation routines are specified and external connection
+to National Instuments hardware devices is provided. Also takes care
+of the logging of relevant experimental data collected and where it
+will be stored on the computer used for the experiment.</p>
 <dl class="method">
 <dt id="retinotopic_mapping.DisplayStimulus.DisplaySequence.clear">
 <code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.DisplayStimulus.DisplaySequence.clear" title="Permalink to this definition">¶</a></dt>
@@ -1366,8 +1078,7 @@ presentation.</p>
 <dl class="method">
 <dt id="retinotopic_mapping.DisplayStimulus.DisplaySequence.set_stim">
 <code class="descname">set_stim</code><span class="sig-paren">(</span><em>stim</em><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.DisplayStimulus.DisplaySequence.set_stim" title="Permalink to this definition">¶</a></dt>
-<dd><p>generate sequence of stimulus to be displayed.</p>
-<p>Calls the <cite>generate_movie</cite> method of the respective stim object and 
+<dd><p>Calls the <cite>generate_movie</cite> method of the respective stim object and 
 populates the attributes <cite>self.sequence</cite> and <cite>self.seq_log</cite></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -1386,9 +1097,19 @@ populates the attributes <cite>self.sequence</cite> and <cite>self.seq_log</cite
 <dl class="method">
 <dt id="retinotopic_mapping.DisplayStimulus.DisplaySequence.trigger_display">
 <code class="descname">trigger_display</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#retinotopic_mapping.DisplayStimulus.DisplaySequence.trigger_display" title="Permalink to this definition">¶</a></dt>
-<dd><p>Display stimulus</p>
+<dd><p>Display stimulus, initialize and perform global experimental routines.</p>
 <p>Prepares all of the necessary parameters to display stimulus and store
-the data collected.</p>
+the data collected in the experiment. Interacts with PyschoPy to create 
+and display each frame of the selected stimulus routine. Handles 
+global calls to trigger and timing devices within the experimental setup.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Assume monitor, indicator, and stimulus objects are defined</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">DisplaySequence</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ds</span> <span class="o">=</span> <span class="n">DisplaySequence</span><span class="p">(</span><span class="n">log_dir</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;C:\)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ds</span><span class="o">.</span><span class="n">set_stim</span><span class="p">(</span><span class="n">uniform_contrast</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ds</span><span class="o">.</span><span class="n">trigger_display</span><span class="p">()</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </dd></dl>
@@ -1449,7 +1170,7 @@ the data collected.</p>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

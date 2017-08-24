@@ -31,7 +31,7 @@ sys.path.append('/Users/johnyearsley/Documents/Allen Institute/Coding/retinotopi
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
-needs_sphinx = '1.6'
+#needs_sphinx = '1.6'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -39,7 +39,7 @@ needs_sphinx = '1.6'
 extensions = ['sphinx.ext.autodoc','sphinx.ext.mathjax',#'sphinx.ext.napoleon',
 'numpydoc','sphinx.ext.autosummary','nbsphinx',
 'IPython.sphinxext.ipython_console_highlighting']
-#numpydoc_show_class_members = False
+numpydoc_show_class_members = False
 
 #class_members_toctree = False
 

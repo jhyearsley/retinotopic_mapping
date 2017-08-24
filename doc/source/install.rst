@@ -9,7 +9,7 @@ To manually install **RetinotopicMapping** you can  download the package
 Then open the command line, move to the directory that the package was 
 installed in and run the `setup.py` file like follows:
 
-.. code-block:: python
+.. code-block:: bash
 
    cd <full path to the package location>
    python setup.py install
@@ -22,8 +22,13 @@ in the command line:
 
 .. code-block:: python
     
-    pip install retinotopic_maps
+    pip install retinotopic_mapping
 
+If you have already installed the package make sure to update to the newest version by running the following command
+
+.. code-block:: bash
+
+   pip install retinotopic_mapping -U
 
 
 Dependencies
